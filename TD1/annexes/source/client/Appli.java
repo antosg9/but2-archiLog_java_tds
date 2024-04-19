@@ -11,8 +11,8 @@ public class Appli {
     int cpt = 0;
     v.setVitesse(0);
     while (v.getVitesse() < v.getVitesseMaximale()) {
-      v.accélérer();
-      System.out.println(v + "accélère");
+      v.accelerer();
+      System.out.println(v + "accelere");
       ++cpt;
     }
     while (v.getVitesse() > 0){
@@ -31,7 +31,7 @@ public class Appli {
     };
     for (Voiture v : tab) {
       int nb = testMoteur(v);
-      System.out.println(v + " nb d'accélérations -> " + nb);
+      System.out.println(v + " nb d'accelerations -> " + nb);
     }
   }
 }
