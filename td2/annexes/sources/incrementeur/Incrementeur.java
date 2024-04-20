@@ -15,10 +15,10 @@ public final class Incrementeur implements Runnable {
   public void run() {
     for (int i = 1; i <= 10; i++) {
       int c = cpt;
-      System.out.println("valeur à incrémenter (round " + i + ") : " 
+      System.out.println("valeur a incrementer (round " + i + ") : " 
           + c + " par " + name);
       c = c + 1;
-      System.out.println("valeur calculée (round " + i + ") par " + name 
+      System.out.println("valeur calculee (round " + i + ") par " + name 
           + " est : " + cpt);
       cpt = c;
     }
