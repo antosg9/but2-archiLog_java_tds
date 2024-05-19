@@ -15,10 +15,8 @@ public class Service_InscriptionCours implements Runnable, Service{
 	private String clientName, message;
 	private int nbDemande;
 	
-	Service_InscriptionCours() throws IOException
-	{
-		//new Thread(this).start();
-	}
+	Service_InscriptionCours()
+	{}
 	
 	public void run()
 	{
