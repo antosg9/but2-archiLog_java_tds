@@ -1,0 +1,1 @@
+Les packages présent dans les dossiers sont à éxecuter dans 2 projets indépendants.
