@@ -17,7 +17,7 @@ public class Cours {
 	public void inscription(int nbPlaces) throws PasAsseezDePlacesException {
 
 
-		synchronized (intitule) {
+		synchronized (this) {
 			
 			if (this.nombrePlacesRestant() < nbPlaces)
 				throw new PasAsseezDePlacesException(this, nbPlaces);
