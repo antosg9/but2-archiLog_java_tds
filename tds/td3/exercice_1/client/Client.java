@@ -17,21 +17,21 @@ public class Client {
 		
 		Socket socket = new Socket(adress,numPort);
 		
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Entrez votre message : ");
+        	Scanner scanner = new Scanner(System.in);
+        	System.out.print("Entrez votre message : ");
 		
 		//Envoyer de la donnée
 		PrintWriter socketOut = new PrintWriter(new OutputStreamWriter(socket.getOutputStream()), true);
-        socketOut.println(scanner.nextLine());
+        	socketOut.println(scanner.nextLine());
         
-        //Lire la réponse du serveur
-        BufferedReader socketIn = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-        System.out.println("Réponse du serveur : " + socketIn.readLine());
+        	//Lire la réponse du serveur
+        	BufferedReader socketIn = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+        	System.out.println("Réponse du serveur : " + socketIn.readLine());
         
-        //Fermeture des flux
-        socketOut.close();
-        socketIn.close();
+        	//Fermeture des flux
+        	socketOut.close();
+        	socketIn.close();
         
-        socket.close(); //Fermeture de la connexion (socket)
+        	socket.close(); //Fermeture de la connexion (socket)
 	}
 }
