@@ -17,7 +17,7 @@ public class Server {
 			new clientHandler(clientSocket); //Rediriger le client dans un thread
 		}
         
-        //Fermeture du serveur (que l'on utilise pas dans ce cas car le serveur tourne 24/24
+        	//Fermeture du serveur (que l'on utilise pas dans ce cas car le serveur tourne 24/24
 		//serverSocket.close();
 		//System.out.println("Server closed");
 	}
