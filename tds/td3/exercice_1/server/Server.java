@@ -13,7 +13,7 @@ public class Server {
 		while(true)
 		{
 			Socket clientSocket = serverSocket.accept(); //Attraper l'adresse du client
-            System.out.println("New client connected : " + clientSocket.getInetAddress()); //Informer
+            		System.out.println("New client connected : " + clientSocket.getInetAddress()); //Informer
 			new clientHandler(clientSocket); //Rediriger le client dans un thread
 		}
         
